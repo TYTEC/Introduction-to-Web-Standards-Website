@@ -77,3 +77,18 @@ hr {
     border: 0;
     box-shadow: 0 10px 10px -10px var(--main-dark-colour) inset;
 }
+
+/* Change colour for links, make italic and don't underline. */
+.content a {
+    color: var(--light-text);
+    font-style: italic;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.content a:visited {
+    color: var(--dark-text);
+}

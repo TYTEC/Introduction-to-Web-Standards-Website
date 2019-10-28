@@ -1,5 +1,5 @@
 /**
- * Custom CSS for the navbar and footer.
+ * Custom CSS for the navigation bar (navbar) and footer.
  * Author: 150014151
  */
 
@@ -12,40 +12,39 @@
     --normal-text: #d1e8e2
 }
 
-/* Top navigation bar. */
 .navbar {
-    overflow: hidden; /* Hide the overflow */
+    overflow: hidden;
     background-color: var(--main-dark-colour);
 }
 
 /* Left-aligned navigation bar links. */
 .navbar a {
-    float: left; /* Make sure that the links stay side-by-side */
-    display: block; /* Change the display to block, for responsive reasons (see below) */
-    text-align: center; /* Centre the text */
-    padding: 14px 20px; /* Add some padding */
-    text-decoration: none; /* Remove underline */
+    float: left; /* Links stay side by side. */
+    display: block;
+    text-align: center; /* Centre the text. */
+    padding: 14px 20px;
+    font-style: normal;!important; /* Don't make navbar links italic like the rest of the links. */
     color: var(--dark-text);
+
 }
-/* Left-aligned navigation bar links. */
+/* Right-aligned navigation bar links. */
 .navbar a.right {
-    float: right; /* Float a link to the right */
+    float: right;
 }
 
-/* Invert colours when mouse over one of the navbar links. */
+/* Invert colours when mouse over one of the navbar links to make it more accessible/readable. */
 .navbar a:hover {
-    background-color: var(--dark-text); /* Grey background color */
-    color: var(--main-dark-colour); /* Black text color */
+    background-color: var(--dark-text);
+    color: var(--main-dark-colour);
+    text-decoration: none;!important; /* Don't underline navbar links when hovering. */
 }
-
-
 
 .footer {
+    /* General footer style */
     padding: 5px;
     text-align: center; /* Centre text*/
     background: var(--main-dark-colour);
     color: var(--dark-text);
-
     /* Make footer stick at the bottom of the page. */
     position: absolute;
     left: 0;
@@ -58,4 +57,3 @@
 .fa-heart {
     color: red;
 }
-
