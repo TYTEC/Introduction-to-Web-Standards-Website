@@ -45,10 +45,14 @@ body {
     color: var(--dark-text);
 }
 
-/* General image style. */
+/* General figure style for image and captions. */
 img {
     max-width: 100%;
     height: auto;
+}
+figcaption {
+    font-size: 16px;
+    text-align: center;
 }
 
 /* Style for the references, which are displayed using HTML lists. */
