@@ -41,6 +41,10 @@ body {
     margin: auto; /* Centre content. */
 }
 
+.content h2 {
+    color: var(--header-text);
+}
+
 /* General image style. */
 img {
     max-width: 100%;
@@ -62,10 +66,22 @@ img {
     background: var(--header-background);
     color: var(--header-text);
 }
-/* Increase the font size of the <h1> element */
+/* Increase the font size of the <h1> element. */
 .header h1 {
     font-size: 40px;
 }
+
+/* General hr style to separate sections. */
+hr {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px var(--header-background) inset;
+}
+
+
+
+
+
 
 
 
@@ -115,3 +131,6 @@ img {
     height: 55px;
     width: 100%;
 }
+
+
+
