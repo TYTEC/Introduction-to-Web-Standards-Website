@@ -53,6 +53,7 @@ img {
 }
 .reference-list-item {
     margin-bottom: 15px; /* Space out each list item. */
+    text-align: left;!important; /* Don't justify align like the rest of the website. */
 }
 
 .header {
