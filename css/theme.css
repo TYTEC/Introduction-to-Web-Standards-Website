@@ -18,12 +18,18 @@
     src: url("fonts/OpenSans-Regular.ttf") format("tff");
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: OpenSans-Regular, sans-serif;
     font-size: 18px;
     text-align: justify;
     color: var(--text);
     background-color: var(--main-background-colour);
+    margin: 0 0 55px;
 }
 
 .content {
@@ -94,4 +100,11 @@ li {
     text-align: center; /* Centre text*/
     background: var(--header-background);
     color: var(--header-text);
+
+    /* Make footer stick at the bottom of the page. */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 55px;
+    width: 100%;
 }
