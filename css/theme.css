@@ -12,7 +12,7 @@
     --text: #d1e8e2
 }
 
-/* Use downloaded font */
+/* Use a good-looking downloaded font */
 @font-face {
     font-family: OpenSans-Regular;
     src: url("fonts/OpenSans-Regular.ttf") format("tff");
