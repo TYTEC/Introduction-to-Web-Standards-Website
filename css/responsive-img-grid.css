@@ -73,7 +73,7 @@
 }
 
 #rig li:hover .rig-overlay {
-    opacity: 0.6;
+    opacity: 0.75;
 }
 
 /* If have captions */
@@ -87,7 +87,7 @@
     width: 100%;
     text-align: center;
     text-transform: capitalize;
-    font-size: 26px;
+    font-size: 30px;
     top: 40%;
     color: var(--light-text);
     opacity: 0;
