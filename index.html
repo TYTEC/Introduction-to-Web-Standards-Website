@@ -22,6 +22,8 @@
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/responsive-img-grid.css"><!-- Only used on this page. -->
 
+    <script src="scripts/responsive-navbar.js"></script>
+
     <!-- Load an icon library used for the navbar links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -32,12 +34,15 @@
     <h1>2019 Guide to the Role of Web Standards</h1>
 </div>
 
-<!-- Navbar -->
+<!-- Responsive Navbar -->
 <div class="navbar-background">
-    <div class="navbar-content">
+    <div id="navbar" class="navbar-content">
         <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
         <a href="content.html"><i class="fa fa-fw fa-book"></i>Content</a>
         <a href="references.html" class="right"><i class="fa fa-fw fa-search"></i>References</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbarEnable()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 </div>
 
