@@ -84,11 +84,9 @@ hr {
     font-style: italic;
     text-decoration: none;
 }
-
 .content a:hover {
     text-decoration: underline;
 }
-
 .content a:visited {
     color: var(--dark-text);
 }
