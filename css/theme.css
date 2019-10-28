@@ -3,13 +3,13 @@
  * Author: 150014151
  */
 
-/* Define colours once here. */
+/* Define colour scheme here (easily scalable). */
 :root {
-    --main-background-colour: #116466;
-    --header-background: #2c3531;
-    --header-text: #d9b08c;
-    --link: #ffcb9a;
-    --text: #d1e8e2
+    --main-light-blue-colour: #116466;
+    --main-dark-colour: #2c3531;
+    --dark-text: #d9b08c;
+    --light-text: #ffcb9a;
+    --normal-text: #d1e8e2
 }
 
 /* Use a downloaded font. */
@@ -30,8 +30,8 @@ body {
     font-family: OpenSans-Regular, sans-serif;
     font-size: 18px;
     text-align: justify;
-    color: var(--text);
-    background-color: var(--main-background-colour);
+    color: var(--normal-text);
+    background-color: var(--main-light-blue-colour);
     /* Use this to allow for a sticky footer of 55 pixels. */
     margin: 0 0 55px;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 .content h2 {
-    color: var(--header-text);
+    color: var(--dark-text);
 }
 
 /* General image style. */
@@ -63,8 +63,8 @@ img {
 .header {
     padding: 20px;
     text-align: center; /* Centre the text in the header. */
-    background: var(--header-background);
-    color: var(--header-text);
+    background: var(--main-dark-colour);
+    color: var(--dark-text);
 }
 /* Increase the font size of the <h1> element. */
 .header h1 {
@@ -75,5 +75,5 @@ img {
 hr {
     height: 10px;
     border: 0;
-    box-shadow: 0 10px 10px -10px var(--header-background) inset;
+    box-shadow: 0 10px 10px -10px var(--main-dark-colour) inset;
 }

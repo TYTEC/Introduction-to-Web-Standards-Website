@@ -3,19 +3,19 @@
  * Author: 150014151
  */
 
-/* Define colours once here. */
+/* Define colour scheme here (easily scalable). */
 :root {
-    --main-background-colour: #116466;
-    --header-background: #2c3531;
-    --header-text: #d9b08c;
-    --link: #ffcb9a;
-    --text: #d1e8e2
+    --main-light-blue-colour: #116466;
+    --main-dark-colour: #2c3531;
+    --dark-text: #d9b08c;
+    --light-text: #ffcb9a;
+    --normal-text: #d1e8e2
 }
 
 /* Top navigation bar. */
 .navbar {
     overflow: hidden; /* Hide the overflow */
-    background-color: var(--header-background);
+    background-color: var(--main-dark-colour);
 }
 
 /* Left-aligned navigation bar links. */
@@ -25,7 +25,7 @@
     text-align: center; /* Centre the text */
     padding: 14px 20px; /* Add some padding */
     text-decoration: none; /* Remove underline */
-    color: var(--header-text);
+    color: var(--dark-text);
 }
 /* Left-aligned navigation bar links. */
 .navbar a.right {
@@ -34,8 +34,8 @@
 
 /* Invert colours when mouse over one of the navbar links. */
 .navbar a:hover {
-    background-color: var(--header-text); /* Grey background color */
-    color: var(--header-background); /* Black text color */
+    background-color: var(--dark-text); /* Grey background color */
+    color: var(--main-dark-colour); /* Black text color */
 }
 
 
@@ -43,8 +43,8 @@
 .footer {
     padding: 5px;
     text-align: center; /* Centre text*/
-    background: var(--header-background);
-    color: var(--header-text);
+    background: var(--main-dark-colour);
+    color: var(--dark-text);
 
     /* Make footer stick at the bottom of the page. */
     position: absolute;

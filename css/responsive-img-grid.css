@@ -4,13 +4,13 @@
  * Modifications by 150014151
  */
 
-/* Define colours once here. */
+/* Define colour scheme here (easily scalable). */
 :root {
-    --main-background-colour: #116466;
-    --header-background: #2c3531;
-    --header-text: #d9b08c;
-    --link: #ffcb9a;
-    --text: #d1e8e2
+    --main-light-blue-colour: #116466;
+    --main-dark-colour: #2c3531;
+    --dark-text: #d9b08c;
+    --light-text: #ffcb9a;
+    --normal-text: #d1e8e2
 }
 
 /* The general div holding the grid. */
@@ -20,7 +20,7 @@
     padding: 0;
     font-size: 0;
     list-style: none;
-    background-color: var(--main-background-colour);
+    background-color: var(--main-light-blue-colour);
 }
 
 /* The grid uses the list mechanism*/
@@ -66,7 +66,7 @@
     right: 0;
     margin: auto;
     /* Visual style */
-    background: var(--main-background-colour);
+    background: var(--main-light-blue-colour);
     background-size: 50px 50px;
     opacity: 0;
     transition: all 0.6s;
@@ -89,7 +89,7 @@
     text-transform: capitalize;
     font-size: 26px;
     top: 40%;
-    color: var(--link);
+    color: var(--light-text);
     opacity: 0;
     filter: alpha(opacity=0); /*For older IE*/
     transform: translateY(-20px);
