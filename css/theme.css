@@ -45,6 +45,10 @@ body {
     color: var(--dark-text);
 }
 
+.content h3 {
+    font-style: italic;
+}
+
 /* General figure style for image and captions. */
 img {
     max-width: 100%;
