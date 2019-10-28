@@ -1,5 +1,5 @@
 /**
- * Custom theme for the website
+ * Custom theme for the website.
  * Author: 150014151
  */
 
@@ -12,42 +12,48 @@
     --text: #d1e8e2
 }
 
-/* Use a good-looking downloaded font */
+/* Use a downloaded font. */
 @font-face {
     font-family: OpenSans-Regular;
     src: url("fonts/OpenSans-Regular.ttf") format("tff");
 }
 
+/* Use this to enable sticky footer. */
 html {
     position: relative;
     min-height: 100%;
 }
 
+/* General styles applied across the entire site.*/
 body {
+    /* Font */
     font-family: OpenSans-Regular, sans-serif;
     font-size: 18px;
     text-align: justify;
     color: var(--text);
     background-color: var(--main-background-colour);
+    /* Use this to allow for a sticky footer of 55 pixels. */
     margin: 0 0 55px;
 }
 
 .content {
     max-width: 960px;
-    margin: auto;
+    margin: auto; /* Centre content. */
 }
 
+/* General image style. */
 img {
     max-width: 100%;
     height: auto;
 }
 
-li {
-    margin-bottom: 15px;
+/* Style for the references, which are displayed using HTML lists. */
+.reference-list {
+    list-style-type: none; /* Don't show bullet point. */
 }
-
-
-
+.reference-list-item {
+    margin-bottom: 15px; /* Space out each list item. */
+}
 
 .header {
     padding: 20px;
