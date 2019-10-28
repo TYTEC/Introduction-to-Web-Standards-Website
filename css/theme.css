@@ -39,6 +39,7 @@ body {
 .content {
     max-width: 960px; /* Keep content span in centre of screen. */
     margin: auto; /* Centre content. */
+    padding: 10px; /* Add padding to all directions to avoid having content stuck to side of web browser on smaller screens. */
 }
 
 .content h2 {
