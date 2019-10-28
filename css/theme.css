@@ -3,16 +3,95 @@
  * Author: 150014151
  */
 
+/* Define colours once here. */
+:root {
+    --main-background-colour: #116466;
+    --header-background: #2c3531;
+    --header-text: #d9b08c;
+    --link: #ffcb9a;
+    --text: #d1e8e2
+}
+
+/* Use downloaded font */
 @font-face {
     font-family: OpenSans-Regular;
-    src: url("fonts/OpenSans-Regular.ttf")format("tff");
+    src: url("fonts/OpenSans-Regular.ttf") format("tff");
 }
 
 body {
-    margin: 10px 150px;
     font-family: OpenSans-Regular, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: var(--text);
+    background-color: var(--main-background-colour);
+}
+
+.content {
+    max-width: 960px;
+    margin: auto;
 }
 
 img {
-    max-width: 75%;
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+
+
+
+.header {
+    padding: 20px;
+    text-align: center; /* Centre the text in the header. */
+    background: var(--header-background);
+    color: var(--header-text);
+}
+/* Increase the font size of the <h1> element */
+.header h1 {
+    font-size: 40px;
+}
+
+
+
+
+/* Top navigation bar. */
+.navbar {
+    overflow: hidden; /* Hide the overflow */
+    background-color: var(--header-background);
+}
+
+/* Left-aligned navigation bar links. */
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    text-align: center; /* Centre the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+    color: var(--header-text);
+}
+/* Left-aligned navigation bar links. */
+.navbar a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Invert colours when mouse over one of the navbar links. */
+.navbar a:hover {
+    background-color: var(--header-text); /* Grey background color */
+    color: var(--header-background); /* Black text color */
+}
+
+
+
+
+
+
+
+.footer {
+    padding: 5px;
+    text-align: center; /* Centre text*/
+    background: var(--header-background);
+    color: var(--header-text);
 }
