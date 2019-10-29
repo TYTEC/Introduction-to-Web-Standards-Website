@@ -5,11 +5,11 @@
 
 /* Define colour scheme here (easily scalable). */
 :root {
-    --main-light-blue-colour: #116466;
+    --main-light-blue-colour: #117d7f;
     --main-dark-colour: #2c3531;
     --dark-text: #d9b08c;
     --light-text: #ffcb9a;
-    --normal-text: #d1e8e2
+    --normal-text: #d6ede7
 }
 
 /* Use a downloaded font. */
