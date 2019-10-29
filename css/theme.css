@@ -106,3 +106,16 @@ a:focus {
     padding: -5px;
     margin: -5px;
 }
+
+/* Adapt text to smaller screens (mobile devices) when screen is less than 600 pixels wide. */
+@media screen and (max-width: 600px) {
+    body {
+        text-align: left;
+    }
+    p {
+        font-size: 16px;
+    }
+    hr {
+        border-top: 1px solid #8c8b8b;
+    }
+}
