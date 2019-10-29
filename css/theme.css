@@ -99,3 +99,10 @@ hr {
 .content a:visited {
     color: var(--dark-text);
 }
+
+/* Make website accessible to users with motor disabilities - links are noticeable when focused. */
+a:focus {
+    border: 5px solid red;
+    padding: -5px;
+    margin: -5px;
+}
