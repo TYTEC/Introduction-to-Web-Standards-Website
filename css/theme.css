@@ -100,10 +100,15 @@ hr {
     color: var(--dark-text);
 }
 
+/* Title is a link to return to home page. */
+.header a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+
 /* Make website accessible to users with motor disabilities - links are noticeable when focused. */
 a:focus {
     border: 5px solid red;
-    padding: -5px;
     margin: -5px;
 }
 
