@@ -201,19 +201,25 @@ Keyboard accessibility was also taken into account for disabled users who cannot
 
 \subsection{Code Validation}
 
-The HTML and CSS were regularly tested across development using the official online code checkers provided by the W3C.
+The HTML and CSS were regularly tested across development using the official online code checkers provided by the W3C. The three HTML files were uploaded to the W3C Markup Validation Service\footnote{W3C Markup Validation Service: \url{https://validator.w3.org}.}, and all three of them passed with (full reports an be found in Appendix \ref{sec:appendix-validation-reports}):
 
-Show HTML results
+\begin{itemize}
+    \item \textit{index.html}: 0 warnings, 0 errors.
+    \item \textit{content.html}: 0 warnings, 0 errors.
+    \item \textit{references.html}: 0 warnings, 0 errors.
+\end{itemize}
+
 Show CSS results.
 
 \subsection{Code Testing}
 
-To test the website, every interactive element was clicked on every page of the website. This included:
+To test the website, every interactive element was clicked on every page of the website. This included clicking on:
 \begin{itemize}
-    \item Clicking on each navbar link \textbf{from every page}, in case a link works on one page but not another.
-    \item Clicking on each of the 6 grid images and making sure they linked to the correct subtopic.
-    \item Clicking on each link to another section.
-    \item Clicking o
+    \item each navbar link \textbf{from every page}, in case a link works on one page but not another.
+    \item on each of the six grid images and making sure they linked to the correct subtopic.
+    \item on each link to another section or figure.
+    \item on each citation e.g. \textit{[6]}, to make sure it redirected the user to the \textit{References} page.
+    \item on each external link in the \textit{References} page to make sure it opened to the correct link in a new tab.
 \end{itemize}
 
 \subsection{Responsiveness Evaluation}
@@ -222,7 +228,7 @@ Test on desktop, change web browser size to see live responsiveness
 
 test on different mobile devices
 
-\subsection{User feedback}
+\subsection{User Evaluation Feedback}
 
 show website to multiple users, so made colours more bright
 
@@ -335,18 +341,91 @@ Note: The data retrieved from this user evaluation will be anonymously compared 
 
 \subsection{User Evaluation Results}
 
-The user evaluation was carried out with a total of 10 users. Their answers to each question are listed below.\\
-
-How readable did you find the website?
-todo add results
-
-What are the main aspects/elements that make the website readable e.g. colours, spacing, fonts, etc.\\
+The user evaluation was carried out with a total of 10 users. Their answers to each question are listed below.
 
 \begin{itemize}
-    \item todo
+    \item How readable did you find the website?
 \end{itemize}
 
-Do you think this website would be suitable to visually impaired readers?
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.9\textwidth]{report/images/user-survey-site-readability.png}}
+{\label{fig:user-survey-site-readability}}
+\end{figure}
+
+\begin{itemize}
+    \item What are the main aspects/elements that make the website readable e.g. colours, spacing, fonts, etc.
+    \begin{itemize}
+        \item 	participant 1: 	colours very appeasing 
+    \item 	participant 2: 	colour scheme, home page images are nice, can click on images to make them bigger
+    \item 	participant 3: 	layout and colours
+    \item 	participant 4: 	Looks good overall, visually pleasing
+    \item 	participant 5: 	The use of colours 
+    \item 	participant 6: 	Large text, vibrant colours, adapting to device reading on
+    \item 	participant 7: 	The colours used (good contrast), the clear structure
+    \item 	participant 8: 	The balance between text and font is perfect!
+    \item 	participant 9: 	Colours
+    \item 	participant 10: 	font and structure of webpage
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item Do you think this website would be suitable to visually impaired readers?
+\end{itemize}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.75\textwidth]{report/images/user-survey-visually-impaired.png}}
+{\label{fig:user-survey-visually-impaired}}
+\end{figure}
+
+\begin{itemize}
+    \item What are the main aspects/elements that make the website accessible to everyone?
+    \begin{itemize}
+        \item 	participant 1: 	simple site, to the point
+        \item 	participant 2: 	red boxes when clicking
+        \item 	participant 3: 	easy access
+        \item 	participant 4: 	Clear separation of sections
+        \item 	participant 5: 	The font size was adequate 
+        \item 	participant 6: 	Pictures, adapting to different devices
+        \item 	participant 7: 	Simple manoeuvring, interactive set-up
+        \item 	participant 8: 	Subtle colours, readable font, and clear copy.
+        \item 	participant 9: 	Fonts
+        \item 	participant 10: pictures
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item What would you change about the website to improve it?
+    \begin{itemize}
+        \item 	participant 1: 	make it fill the screen
+        \item 	participant 2: 	add more colour options
+        \item 	participant 3: 	nothing
+        \item 	participant 4: 	Less dark background, dynamic url on contents page when scrolling down
+        \item 	participant 5: 	Change the way the pictures are all the end, maybe move them around a little bit 
+        \item 	participant 6: 	nothing
+        \item 	participant 7: 	Maybe a little bigger font or more room between the lines
+        \item 	participant 8: 	Nothing
+        \item 	participant 9: 	nothing
+        \item 	participant 10: 	on the phone, you are unable to see where each picture directs you. Also make it a bit prettier (the colours are quite dull)
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item Have you tested the website on desktop or mobile?
+\end{itemize}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.75\textwidth]{report/images/user-survey-device.png}}
+{\label{fig:user-survey-device}}
+\end{figure}
+
+\begin{itemize}
+    \item If you tested the website on mobile, how would you rate the responsiveness of the website (how well did it scale from large screens to small screens)?
+\end{itemize}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.9\textwidth]{report/images/user-survey-responsiveness.png}}
+{\label{fig:user-survey-responsiveness}}
+\end{figure}
 
 \clearpage
 \section{Accessibility Results}
@@ -379,11 +458,26 @@ Do you think this website would be suitable to visually impaired readers?
 \end{figure}
 
 \clearpage
-\section{Validation URL's and Reports}
-todo
+\section{HTML Validation Reports}
+\label{sec:appendix-validation-reports}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.8\textwidth]{report/images/validation-index.png}}
+\caption{\label{fig:validation-index}Validation of \textit{index.html} file.}
+\end{figure}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.8\textwidth]{report/images/validation-content.png}}
+\caption{\label{fig:validation-content.png}Validation of \textit{content.html} file.}
+\end{figure}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.8\textwidth]{report/images/validation-references.png}}
+\caption{\label{fig:validation-references.png}Validation of \textit{references.html} file.}
+\end{figure}
 
 \clearpage
-\section{Browser Functionality and Compability}
+\section{Browser Functionality and Compatibility}
 todo
 
 \end{appendices}
