@@ -53,21 +53,21 @@
 \section{Prior Planning and Research}
 \label{sec:prior-planning-research}
 
-The first step consisted in deciding which area to present in the website: the ``Role of Web Standards'' subject was elected. Next, content about the subject was researched in order to come up with a 6-part plan. The initial draft can be found in Appendix \ref{sec:appendix-prior-initial-draft}. No content from the lecture slides was used, the references were found entirely through online searching to find interesting sources. The references used can be found directly on the website: \url{https://agj6.host.cs.st-andrews.ac.uk/references.html}. The entire content of the website, including titles, paragraphs, citations, figures and references, were typed out in a Word document as an essay (see Appendix \ref{sec:appendix-prior-planning-research-essay}), before being transformed into a web page, which is discussed in Section \ref{sec:design-content-initial-markup}.
+The first step consisted in deciding which area to present on the website: the ``Role of Web Standards'' subject was elected. Next, content about the subject was researched in order to come up with a 6-part plan. The initial draft can be found in Appendix \ref{sec:appendix-prior-initial-draft}. No content from the lecture slides was used, the references were found entirely through online searching to find interesting sources. The references used can be found directly on the website: \url{https://agj6.host.cs.st-andrews.ac.uk/references.html}. The entire content of the website, including titles, paragraphs, citations, figures and references, were typed out in a Word document like an essay (see Appendix \ref{sec:appendix-prior-planning-research-essay}), before being transformed into a web page, which is discussed in Section \ref{sec:design-content-initial-markup}.
 
 % ---------------------------------------------------------------------------
 
 \section{Aims of the Website}
 \label{sec:aims}
 
-The aim of the website is to instruct the reader about the goal of having web standards and how they have affected the World Wide Web up until today. The objective is also to educate the reader about how these web standards evolved to regulate web technologies, compatibility and accessibility across of the World Wide Web, what are web standards organisations and who are the main ones, how new web standards are developed, and an overview of the most popular web standards.
+The website aims to instruct the reader about the goal of having web standards and how they have affected the World Wide Web up until today. The objective is also to educate the reader about how these web standards evolved to regulate web technologies, compatibility and accessibility across of the World Wide Web, what are web standards organisations and who are the main ones, how new web standards are developed, and an overview of the most popular web standards.
 
 % ---------------------------------------------------------------------------
 
 \section{Target Audience}
 \label{sec:target-audience}
 
-The target audience for this website could potentially include any reader who is curious about how the web functions. This includes anyone who is interested in discovering how the web pages they visit on a daily basis are regulated, whether they have no experience in web development or are upcoming web developers who wish to extend their knowledge about web technologies.
+The target audience for this website could potentially include any reader curious about how the web functions. This includes anyone interested in discovering how the web pages they visit daily are regulated, whether they have no experience in web development or are upcoming web developers who wish to extend their knowledge about web technologies.
 
 % ---------------------------------------------------------------------------
 
@@ -104,7 +104,7 @@ The second step involved separating the content into different pages. Dense cont
 \end{itemize}
 This approach was chosen in order to avoid having multiple sparse pages with one only subtopic per page.\\
 
-To link those pages, a header, a navbar\footnote{Navigation Bar} and a footer were added as well. The header contains the title of the website, which returns the user to the home page when clicked. The navbar is made up of links that act as buttons linking all the pages together. Finally, the footer is used for credits, but is also used to provide the user a site map\footnote{A list of all the publicly accessible pages on a web site.} and contact information on larger websites. These three elements, along with the metadata, are the only duplicated elements across all HTML files.\\
+To link those pages, a header, a navbar\footnote{Navigation Bar} and a footer were added as well. The header contains the title of the website, which returns the user to the home page when clicked. The navbar is made up of links that act as buttons linking all the pages together. Finally, the footer is used for credits, but is also used to provide the user with a site map\footnote{A list of all the publicly accessible pages on a web site.} and contact information on larger websites. These three elements, along with the metadata, are the only duplicated elements across all HTML files.\\
 
 The root directory itself is organised as follows (see Figure \ref{fig:root-structure} for more detail):
 \begin{itemize}
@@ -135,7 +135,7 @@ The colour scheme used was inspired from the \textit{``Sleek and Futuristic''} t
 
 Regarding the font used, \textit{OpenSans-Regular} font was used as it has a \textit{``high readability and friendly appearance. [It] has excellent legibility and its letterforms are incredibly strong with the very extensive font library.''} \cite{open-sans-font}. Additionally, it allowed me to learn where to download fonts, how to import them in the stylesheets and where to store them in the project structure.\\
 
-Icons from the W3.CSS Icons Library \cite{w3-css-icons} were used to make the navbar links and footer more friendly, as seen in Figure \ref{fig:navbar-icons}. From personal experience, a heart is always added inn the footer to make the website feel more friendly to the user.
+Icons from the W3.CSS Icons Library \cite{w3-css-icons} were used to make the navbar links and footer more friendly, as seen in Figure \ref{fig:navbar-icons}. From personal experience, a heart is always added in the footer to make the website feel more friendly to the user.
 
 \begin{figure}[h] 
 \centerline{\includegraphics[width=0.7\textwidth]{report/images/navbar-icons.png}}
@@ -158,11 +158,12 @@ The first improvement consisted in making efficient and elegant use of the home 
 \caption{\label{fig:grid-images-hover}A screenshot of the grid of images, with the mouse hovering the right image, triggering the title to appear.}
 \end{figure}
 
-A tutorial from Menucool \cite{menucool} was followed to successfully implement this feature, and external code was therefore used. This allowed me to strengthen my understanding of CSS written by other web developers and ability to understand and modify existing CSS to satisfy the website's requirements. The style handling the grid of images can be found at \textit{``css/modal-images.css''}. The six photos used were provided by Pexels\footnote{Pexels: \url{https://www.pexels.com/photo-license/}.} could be re-used for free.\\
+A tutorial from Menucool \cite{menucool} was followed to successfully implement this feature, and external code was therefore used. This allowed me to strengthen my understanding of CSS written by other web developers and the ability to understand and modify existing CSS to satisfy the website's requirements. The style handling the grid of images can be found at \textit{``css/modal-images.css''}. The six photos used were provided by Pexels\footnote{Pexels: \url{https://www.pexels.com/photo-license/}.} could be re-used for free.\\
 
-The second improvement targeted the figures used in the \textit{Contents} page. Indeed, it was initially very hard to discern details on the images, especially on mobile devices, without zooming in manually. Therefore, image modals from the W3School \cite{w3s-image-modals} were implemented to allow the user to click on one of the three figures from the \textit{Contents} page to view it scaled up in a full screen view with a dark background. Benefits of images modals are further discussed in Section \ref{sec:accessibility}.
+The second improvement targeted the figures used in the \textit{Contents} page. Indeed, it was initially very hard to discern details on the images, especially on mobile devices, without zooming in manually. Therefore, image modals from the W3School \cite{w3s-image-modals} were implemented to allow the user to click on one of the three figures from the \textit{Contents} page to view it scaled up in a fullscreen view with a dark background. Benefits of images modals are further discussed in Section \ref{sec:accessibility}.
 
 \subsection{Responsiveness}
+\label{sec:responsiveness}
 
 Most of the style that has been written so far suits large screens (desktop and laptop devices), but it does not suit small screens yet (mobile devices). Therefore, the website had to be made responsive to adapt to any screen size. This was mainly achieved through the use of \textit{media queries}, which act as breakpoints in CSS when applying style by checking the size of the current screen to decide which style to apply to the markup elements \cite{responsive-media-queries}.\\
 
@@ -199,18 +200,6 @@ Keyboard accessibility was also taken into account for disabled users who cannot
 \section{Testing and Evaluation}
 \label{sec:testing-evaluation}
 
-\subsection{Code Validation}
-
-The HTML and CSS were regularly tested across development using the official online code checkers provided by the W3C. The three HTML files were uploaded to the W3C Markup Validation Service\footnote{W3C Markup Validation Service: \url{https://validator.w3.org}.}, and all three of them passed with (full reports an be found in Appendix \ref{sec:appendix-validation-reports}):
-
-\begin{itemize}
-    \item \textit{index.html}: 0 warnings, 0 errors.
-    \item \textit{content.html}: 0 warnings, 0 errors.
-    \item \textit{references.html}: 0 warnings, 0 errors.
-\end{itemize}
-
-Show CSS results.
-
 \subsection{Code Testing}
 
 To test the website, every interactive element was clicked on every page of the website. This included clicking on:
@@ -222,20 +211,49 @@ To test the website, every interactive element was clicked on every page of the 
     \item on each external link in the \textit{References} page to make sure it opened to the correct link in a new tab.
 \end{itemize}
 
-\subsection{Responsiveness Evaluation}
-
-Test on desktop, change web browser size to see live responsiveness
-
-test on different mobile devices
-
 \subsection{User Evaluation Feedback}
 
-show website to multiple users, so made colours more bright
+Ten users were asked to explore the website before filling out a form that asked them questions about the website's readability, accessibility, responsiveness and style, the device used and the potential improvements they would like to see. The form was provided via Google Forms and can be found in Appendix \ref{sec:appendix-user-evaluation-form}. The full results to each question of the form can be found in Appendix \ref{sec:appendix-user-evaluation-results}.\\
+
+The evaluation revealed that all users found the website readable, mainly thanks to the colours. However, a few users complained about the colours being \textit{``dark''}, which was taken into account by increasing the brightness on the blue and beige colours from Figure \ref{fig:colour-palette} (which was an easy operation thanks to the colours being declared in the root of each stylesheet). The users also found the web site to be responsive to smaller screens, saying that it ``adapted'' well to mobile devices. This is important since 80\% of the users tested the website on a mobile device.\\
+
+Regarding accessibility, 40\% of users believed the website would be suitable to visually impaired reader, while 60\% answered \textit{``maybe''}. This depicts that more features could have been implemented to achieve higher accessibility. One feature that was attempted, but ended up taking too long, was adding a button on the navbar that allowed the user to toggle between different colour theme. The goal was to have the current theme switch to a basic white background / black text theme with bigger text sizes in order to facilitate the reading experience.
+
+\subsection{Code Validation}
+
+The HTML and CSS were regularly tested across development using the official online code checkers provided by the W3C. The three HTML files were uploaded to the W3C Markup Validation Service\footnote{W3C Markup Validation Service: \url{https://validator.w3.org}.}, and all three of them passed with (full reports an be found in Appendix \ref{sec:appendix-validation-reports}):
+
+\begin{itemize}
+    \item \textit{index.html}: 0 warnings, 0 errors.
+    \item \textit{content.html}: 0 warnings, 0 errors.
+    \item \textit{references.html}: 0 warnings, 0 errors.
+\end{itemize}
+
+\subsection{Responsiveness Evaluation}
+
+The website was first tested on different browsers, including Chrome, Safari, Mozilla Firefox and Edge. All of the website's pages were displayed identically throughout all web browsers.\\
+
+Next, the website was tested on different devices, namely desktop and mobile devices. All of the styling detailed in Section \ref{sec:responsiveness} was correctly applied to the mobile device. A full comparison of desktop and mobile versions of the website can be found in Appendix \ref{sec:appendix-device-responsiveness}. A couple of improvements that could be carried out include the breaking of long links on the \textit{References} page and adapting the grid of images for mobile devices according to the user evaluation as a user noticed that mobile devices do not display the title of the section when hovering over an image.\\
+
+To ensure that the styling was applied at the right moment, an experience was carried out where the web browser's window was gradually shrunk on its horizontal axis, causing the elements on the page to start squeezing before the CSS for small screens began being applied on various elements such as collapsing the navbar or display a single image on the grid of images.
+
+\section{Website Hosting}
+\label{sec:website-hosting}
+
+The website is hosted on a nginx web server provided by the University of St Andrews. It can be visited at the following URL: \url{https://agj6.host.cs.st-andrews.ac.uk/}.
 
 \section{Conclusions}
 \label{sec:conclusions}
 
-Making a simple website with only markup and basic css is easy. The difficulty lies with making it responsive, accessible to everyone, organised, optimised for speed
+Making a website consisting only of HTML markup and CSS is to a certain extent easy. The real difficulty lies with making a website:
+\begin{itemize}
+    \item \textit{responsive} to multiple screen sizes, including less used devices such as tablets or televisions.
+    \item \textit{accessible} to everyone, taking as many disabilities into consideration.
+    \item \textit{well-structured} and organised.
+    \item easily \textit{scalable}, allowing for maintenance and change without unnecessary overheads.
+    \item \textit{quick}, not wasting time loading.
+    \item \textit{compliant} to web standards.
+\end{itemize}
 
 % ---------------------------------------------------------------------------
 
@@ -262,13 +280,44 @@ Making a simple website with only markup and basic css is easy. The difficulty l
 \includepdf[pages={1},pagecommand={},scale=0.9]{report/images/prior-planning.pdf}
 
 \clearpage
+\section{Accessibility Results}
+\label{sec:appendix-accessibility-results}
+
+\subsection{Contrast Results}
+\label{sec:appendix-accessibility-results-contrast}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.7\textwidth]{report/images/accessibility-contrast-header.png}}
+\caption{\label{fig:accessibility-contrast-header}Screenshot of the contrast result of the Chrome developer tool element inspector for the header's text.}
+\end{figure}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.8\textwidth]{report/images/accessibility-contrast-text.png}}
+\caption{\label{fig:accessibility-contrast-text}Screenshot of the contrast result of the Chrome developer tool element inspector for the main content's text.}
+\end{figure}
+
+\begin{figure}[ht] 
+\centerline{\includegraphics[width=\textwidth]{report/images/accessibility-contrast-modal.png}}
+\caption{\label{fig:accessibility-contrast-modal}Screenshot of the contrast result of the Chrome developer tool element inspector for one of the figure's modal in fullscreen.}
+\end{figure}
+
+\subsection{Keyboard Accessibility Screenshot}
+\label{sec:appendix-accessibility-results-keyboard}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=\textwidth]{report/images/border-focus.png}}
+\caption{\label{fig:border-focus}Screenshot of the \textit{Home} page with multiple links set on \textit{:focus} to illustrate the bright red border surrounding each element when navigating through the page using either the \textit{tab} key or when clicking one of the links.}
+\end{figure}
+
+\clearpage
 \section{User Evaluation}
 
 \subsection{User Evaluation Form}
+\label{sec:appendix-user-evaluation-form}
 
-The user evaluation is powered by Google Forms, and is available online at: \url{https://forms.gle/FHY6LDmY65GQa33s8}.
+The user evaluation is powered by Google Forms and is available online at \url{https://forms.gle/FHY6LDmY65GQa33s8}.
 
-\paragraph{Description} This is a user evaluation of the website made for the Assignment 1 of IS5103 Web Technologies module. The website aims to introduce the reader to the role of web standards.\\
+\paragraph{Description} This is a user evaluation of the website made for Assignment 1 of IS5103 Web Technologies module. The website aims to introduce the reader to the role of web standards.\\
 
 Note: The data retrieved from this user evaluation will be anonymously compared to other results. By submitting this form, you give consent for your data to be evaluated and used in the report. You may withdraw from the user evaluation at any time.
 
@@ -340,6 +389,7 @@ Note: The data retrieved from this user evaluation will be anonymously compared 
 \end{itemize}
 
 \subsection{User Evaluation Results}
+\label{sec:appendix-user-evaluation-results}
 
 The user evaluation was carried out with a total of 10 users. Their answers to each question are listed below.
 
@@ -428,36 +478,6 @@ The user evaluation was carried out with a total of 10 users. Their answers to e
 \end{figure}
 
 \clearpage
-\section{Accessibility Results}
-\label{sec:appendix-accessibility-results}
-
-\subsection{Contrast Results}
-\label{sec:appendix-accessibility-results-contrast}
-
-\begin{figure}[h] 
-\centerline{\includegraphics[width=0.7\textwidth]{report/images/accessibility-contrast-header.png}}
-\caption{\label{fig:accessibility-contrast-header}Screenshot of the contrast result of the Chrome developer tool element inspector for the header's text.}
-\end{figure}
-
-\begin{figure}[h] 
-\centerline{\includegraphics[width=0.8\textwidth]{report/images/accessibility-contrast-text.png}}
-\caption{\label{fig:accessibility-contrast-text}Screenshot of the contrast result of the Chrome developer tool element inspector for the main content's text.}
-\end{figure}
-
-\begin{figure}[ht] 
-\centerline{\includegraphics[width=\textwidth]{report/images/accessibility-contrast-modal.png}}
-\caption{\label{fig:accessibility-contrast-modal}Screenshot of the contrast result of the Chrome developer tool element inspector for one of the figure's modal in fullscreen.}
-\end{figure}
-
-\subsection{Keyboard Accessibility Screenshot}
-\label{sec:appendix-accessibility-results-keyboard}
-
-\begin{figure}[h] 
-\centerline{\includegraphics[width=\textwidth]{report/images/border-focus.png}}
-\caption{\label{fig:border-focus}Screenshot of the \textit{Home} page with multiple links set on \textit{:focus} to illustrate the bright red border surrounding each element when navigating through the page using either the \textit{tab} key or when clicking one of the links.}
-\end{figure}
-
-\clearpage
 \section{HTML Validation Reports}
 \label{sec:appendix-validation-reports}
 
@@ -477,8 +497,23 @@ The user evaluation was carried out with a total of 10 users. Their answers to e
 \end{figure}
 
 \clearpage
-\section{Browser Functionality and Compatibility}
-todo
+\section{Device Responsiveness}
+\label{sec:appendix-device-responsiveness}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=\textwidth]{report/images/comparison-index.png}}
+\caption{\label{fig:comparison-index}Comparison of desktop (left) and mobile (right) views of the \textit{Home} page.}
+\end{figure}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=\textwidth]{report/images/comparison-content-top.png}}
+\caption{\label{fig:comparison-content-top}Comparison of desktop (left) and mobile (right) views of the \textit{Content} page.}
+\end{figure}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=\textwidth]{report/images/comparison-references.png}}
+\caption{\label{fig:comparison-references}Comparison of desktop (left) and mobile (right) views of the \textit{References} page.}
+\end{figure}
 
 \end{appendices}
 \end{document}
