@@ -20,6 +20,7 @@
     <!-- Custom CSS stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/theme.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/modal-images.css"><!-- Only used on this page. -->
 
     <!-- Custom JavaScript function for a responsive navbar -->
     <script src="scripts/responsive-navbar.js"></script>
@@ -78,10 +79,17 @@
         terms of bandwidth required, hence making it even harder to access them from regions with poor Internet connections
         such as developing countries and rural areas.</p>
 
+    <!-- Figure 1 -->
     <figure>
         <img id="fig-html-code-comparison" src="images/html-code-comparison-min.jpg" alt="HTML code comparison between tag soup and clean code.">
         <figcaption>Figure 1: A comparison of HTML <q>tag-soup</q> to the left and clean HTML code to the right.</figcaption>
     </figure>
+    <!-- Figure 1 Modal -->
+    <div id="modal-html-code-comparison" class="modal">
+        <span class="close">&times;</span><!-- Close button. -->
+        <img class="modal-content" id="modal-img-html-code-comparison" alt="HTML code comparison between tag soup and clean code. (MODAL)"><!-- Modal content image. -->
+        <div id="caption-html-code-comparison"></div><!-- Modal caption. -->
+    </div>
 
     <p>Therefore, the WaSP (Web Standards Project) set to fix these urging issues back in 1998, which corresponds to the
         first trace of the web standards movement. The organisation’s original mission goal, which fundamentally remains
@@ -94,10 +102,17 @@
         develop their web browsers according to HTML, CSS and JavaScript standards <a href="references.html#ref6">[6]</a>, before
         persuading designers still using <q>tag soup</q> to adopt these standards when creating their web pages.</p>
 
+    <!-- Figure 2 -->
     <figure>
         <img id="fig-browser-wars" src="images/browser-wars.png" alt="Comparison depicting the difference between browsers in the late 1990s.">
         <figcaption>Figure 2: A depiction of the differences between web browsers from the late 1990s, with Internet Explorer on the left, Netscape in the middle, and Mozilla on the right.</figcaption>
     </figure>
+    <!-- Figure 2 Modal -->
+    <div id="modal-browser-wars" class="modal">
+        <span class="close">&times;</span><!-- Close button. -->
+        <img class="modal-content" id="modal-img-browser-wars" alt="Comparison depicting the difference between browsers in the late 1990s. (MODAL)"><!-- Modal content image. -->
+        <div id="caption-browser-wars"></div><!-- Modal caption. -->
+    </div>
 
 
     <!-- *************************** WEB STANDARDS ORGANISATIONS NOWADAYS ****************************************** -->
@@ -170,6 +185,13 @@
         <figcaption>Figure 3: The transitions between the different maturity levels of a W3C Recommendation.</figcaption>
     </figure>
 
+    <!-- Figure 3 Modal -->
+    <div id="modal-W3C-recommendations" class="modal">
+        <span class="close">&times;</span><!-- Close button. -->
+        <img class="modal-content" id="modal-img-W3C-recommendations" alt="W3C Recommendation Maturity Levels. (MODAL)"><!-- Modal content image. -->
+        <div id="caption-W3C-recommendations"></div><!-- Modal caption. -->
+    </div>
+
     <p>For example, the first CSS (Cascading Style Sheets) standard was introduced in 1996 as the CSS 1 W3C Recommendation. It has since then been replaced by CSS 2, which was introduced as a Working Draft in 1997 before being approved as a W3C Recommendation in 1998. Since 2011, CSS 3 has been the recommended standard by the W3C <a href="references.html#ref13">[13]</a>.</p>
 
 
@@ -224,5 +246,7 @@
     </div>
 
 </div>
+
+<script src="scripts/modal-images.js"></script>
 </body>
 </html>
