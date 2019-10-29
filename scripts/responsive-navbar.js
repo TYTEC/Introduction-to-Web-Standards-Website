@@ -1,7 +1,9 @@
 /**
  * Code from W3School for responsive navigation bars.
  * Source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
- * The variables were renamed to match the website's local variables.
+ *
+ * Modifications to original code: The variables were renamed to match the website's local variables.
+ * Modifications by 150014151
  *
  * Toggle between adding and removing the "responsive" class to navbar-content when the user clicks on the icon.
  */

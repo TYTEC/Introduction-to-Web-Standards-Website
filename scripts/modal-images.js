@@ -26,8 +26,6 @@ span1.onclick = function () {
     modal1.style.display = "none";
 };
 
-
-
 // Figure 2 Modal
 
 // Get the modal
@@ -47,8 +45,6 @@ const span2 = document.getElementsByClassName("close")[1];
 span2.onclick = function () {
     modal2.style.display = "none";
 };
-
-
 
 // Figure 3 Modal
 
