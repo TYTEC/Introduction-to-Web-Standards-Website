@@ -11,6 +11,7 @@
 \usepackage{color} % defines colors for code listings
 \usepackage{comment} % allows for block of comments
 \usepackage{gensymb} % degree symbol
+\usepackage{pdfpages} % include pdfs in the document (used for console output)
 \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
 
 % style code listings
@@ -47,85 +48,153 @@
 \tableofcontents
 \newpage
 
+% ---------------------------------------------------------------------------
+
 \section{Prior Planning and Research}
 \label{sec:prior-planning-research}
 
-The first step consisted in deciding which area to present. The ``Role of Web Standards'' was elected. The next step was to start researching content to present and come up with a plan. To do so, the entire content, including titles, paragraphs, citations, figures and references, was typed out in a Word document before being transformed into a web page. The references used to research the content can be found directly on the website: \url{https://agj6.host.cs.st-andrews.ac.uk/references.html}
+The first step consisted in deciding which area to present in the website: the ``Role of Web Standards'' subject was elected. Next, content about the subject was researched in order to come up with a 6-part plan. The initial draft can be found in Appendix \ref{sec:appendix-prior-initial-draft}. No content from the lecture slides was used, the references were found entirely through online searching to find interesting sources. The references used can be found directly on the website: \url{https://agj6.host.cs.st-andrews.ac.uk/references.html}. The entire content of the website, including titles, paragraphs, citations, figures and references, were typed out in a Word document as an essay (see Appendix \ref{sec:appendix-prior-planning-research-essay}), before being transformed into a web page, which is discussed in Section \ref{sec:design-content-initial-markup}.
+
+% ---------------------------------------------------------------------------
 
 \section{Aims of the Website}
 \label{sec:aims}
 
-The aim of this website is to instruct the reader about the objective of web standards, how they evolved to regulate compatibility across of the World Wide Web, what are web standards organisations and who are the main ones, how new web standards are developed, and an overview of the most popular web standards.
+The aim of the website is to instruct the reader about the goal of having web standards and how they have affected the World Wide Web up until today. The objective is also to educate the reader about how these web standards evolved to regulate web technologies, compatibility and accessibility across of the World Wide Web, what are web standards organisations and who are the main ones, how new web standards are developed, and an overview of the most popular web standards.
+
+% ---------------------------------------------------------------------------
 
 \section{Target Audience}
 \label{sec:target-audience}
 
-The target audience for this website includes anyone who is interested in discovering how the web pages they visit on a daily basis are regulated, no matter on the level of knowledge in web development.
+The target audience for this website could potentially include any reader who is curious about how the web functions. This includes anyone who is interested in discovering how the web pages they visit on a daily basis are regulated, whether they have no experience in web development or are upcoming web developers who wish to extend their knowledge about web technologies.
+
+% ---------------------------------------------------------------------------
+
+\section{Tools Used}
+\label{sec:tools-used}
+
+The following tools were used when designing the website:
+\begin{itemize}
+    \item WebStorm: an IDE developed by JetBrains \cite{webstorm} to write the HTML, CSS and JavaScript code.
+    \item GitHub Version Control: to backup and version the code.
+    \item Google Chrome web browser: to view display the website and debug using the developer tools.
+    \item Overleaf: to write the report in \LaTeX.
+\end{itemize}
+
+% ---------------------------------------------------------------------------
 
 \section{Design and Content}
 \label{sec:design-content}
 
-\subsection{Initial Markup}
+The website was implemented in different iterations, starting with basic HTML markup before organising the content into different pages with navigation, followed by styling the markup and adding advanced styling features through CSS and JavaScript, and finally ending with making the website responsive and optimising imports. 
 
-The first step consisted in creating an empty \textit{index.html} file with some metadata and an empty body before pasting the content from the word document mentioned in Section \ref{sec:prior-planning-research}. Basic HTML markup was then used to separate the text into headings (\textit{\textless h1\textgreater} for page title, \textit{\textless h2\textgreater} for section titles, \textit{\textless h3\textgreater} for subsection titles), paragraphs and lists. More advanced markup such as anchor tags, figures (images and captions), quotes. Once the basic markup was completed, links between the different sections of the website were created, including links to references, figures and other sections.
+\subsection{Initial Markup}
+\label{sec:design-content-initial-markup}
+
+The first step consisted in creating an empty \textit{index.html} file in the root directory, including the metadata and an empty body before pasting the content from the Word document mentioned in Section \ref{sec:prior-planning-research}. HTML markup was then used to separate the text into headings (\textit{\textless h1\textgreater} for page title, \textit{\textless h2\textgreater} for section titles, \textit{\textless h3\textgreater} for subsection titles), paragraphs and lists. Next, markup such as anchor tags for links, figures (which include an image and a caption) and quotes was added. Once the basic markup was completed, links between the different sections of the website were created, such links from the content citations to their references, links pointing to figures and related sections.
 
 \subsection{Website Organisation}
 
 The second step involved separating the content into different pages. Dense content was favoured over sparse content, leading to the website being divided into three separate pages:
 \begin{itemize}
-    \item Home page.
-    \item Content page.
-    \item References page
+    \item Home page in the \textit{``index.html''} file.
+    \item Content page in the \textit{``content.html''} file.
+    \item References page in the \textit{``references.html''} file.
 \end{itemize}
-This approach was chosen in order to avoid having multiple sparse pages with one subtopic per page.\\
+This approach was chosen in order to avoid having multiple sparse pages with one only subtopic per page.\\
 
-To link those pages, a header, a navbar\footnote{Navigation Bar} and a footer were added as well. The header contains the title of the website, which returns the user to the home page when clicked. The navbar is made up of links that act as buttons linking all the pages together. Finally, the footer is used for credits, but could have been used to provide a site map\footnote{A list of all the publicly accessible pages on a web site.} and contact information as well.
+To link those pages, a header, a navbar\footnote{Navigation Bar} and a footer were added as well. The header contains the title of the website, which returns the user to the home page when clicked. The navbar is made up of links that act as buttons linking all the pages together. Finally, the footer is used for credits, but is also used to provide the user a site map\footnote{A list of all the publicly accessible pages on a web site.} and contact information on larger websites. These three elements, along with the metadata, are the only duplicated elements across all HTML files.\\
+
+The root directory itself is organised as follows (see Figure \ref{fig:root-structure} for more detail):
+\begin{itemize}
+    \item \textit{``root''}: contains the HTML files and the directories mentioned below.
+    \item \textit{``images''}: contains all the images used across the website.
+    \item \textit{``css''}: contains the stylesheets and the fonts.
+    \item \textit{``scripts''}: contains the JavaScript functions called when an event is triggered in the HTML code.
+\end{itemize}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.5\textwidth]{report/images/root_structure.png}}
+\caption{\label{fig:root-structure}A screenshot of the project's root structure depicting the organisation of the website's files.}
+\end{figure}
 
 \subsection{Early Styling}
+\label{sec:design-content-early-styling}
 
-With the basics of the website completed, some styling to make the visual look more user-friendly and readable could be applied. The first step consisted in adding a favicon, which is a small image displayed in the web browser's tab next to the website's title.\\
+The structure of the website now completed, some styling to make the overall visual impression more user-friendly and readable could be applied. The first step consisted in adding a \textit{favicon} (which was downloaded from \textit{favicon.cc} \cite{faviconcc}), which is a small image displayed in the web browser's tab next to the website's title \cite{jain2003user}.\\
 
-Next, a single stylesheet was created to write general CSS styles and apply them to the markup. These include adding colours, manipulating text sizes, fonts and weights, and tuning the alignment of the elements displayed on the page. The colours scheme was inspired from the insert theme. To allow the website to be easily scalabale in the future, variables to represent the different colours of the colour theme wer added at the top of the stylesheets, allowing the colours to be easily modified in a single place rather than repetively in the entire code. Regarding fonts, the \textit{OpenSans-Regular} font was used as it has a ``high readability and friendly appearance. [It] has excellent legibility and its letterforms are incredibly strong with the very extensive font library.'' and enabled me to experience with font imports.\\
+Next, a single stylesheet was created to write general CSS styles and apply them to the markup. The stylesheet added colours to backgrounds and text, manipulated text sizes, fonts and weights, and tuned the alignment of the displayed elements on the page.\\
 
-Icons from the W3.CSS Icons Library were used to make the navbar links and footer more friendly. From personal experience, a heart is always added inn the footer to make the website feel more friendly to the user.\\
+The colour scheme used was inspired from the \textit{``Sleek and Futuristic''} theme from \textit{Visme}\footnote{Visme \url{https://visme.co/blog/website-color-schemes/}}, which can be seen in Figure \ref{fig:colour-palette}. To allow the website to be easily changed in the future, variables to represent the different colours of the theme were added at the top of the stylesheets, allowing them to be easily modified in a single place rather than repetitively in the entire code.\\
 
-During the development of the aforementioned CSS styles, Chrome's developer tools, which includes a DOM element inspector, was used to apply CSS on the go and determine the best values for the styles such as font sizes, paddings and margins.\\
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.7\textwidth]{report/images/colour-palette.png}}
+\caption{\label{fig:colour-palette}The colour palette of the \textit{``Sleek and Futuristic''} theme, generated via \textit{coolors.co}.}
+\end{figure}
 
-To improve the style and readability of the pages, small HTML elements were added such as thematic breaks \textit{\textless hr\textgreater}, line breaks \textit{\textless br\textgreater} and links to external websites opening in new tabs by using \textit{target=``\_blank''} in the anchor tags \textit{\textless a\textgreater}. Additionally, the footer was modified to stick at the bottom of the page even when there is little content in it.
+Regarding the font used, \textit{OpenSans-Regular} font was used as it has a \textit{``high readability and friendly appearance. [It] has excellent legibility and its letterforms are incredibly strong with the very extensive font library.''} \cite{open-sans-font}. Additionally, it allowed me to learn where to download fonts, how to import them in the stylesheets and where to store them in the project structure.\\
+
+Icons from the W3.CSS Icons Library \cite{w3-css-icons} were used to make the navbar links and footer more friendly, as seen in Figure \ref{fig:navbar-icons}. From personal experience, a heart is always added inn the footer to make the website feel more friendly to the user.
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.7\textwidth]{report/images/navbar-icons.png}}
+\caption{\label{fig:navbar-icons}A screenshot of the navbar, with a zoom on the use of icons.}
+\end{figure}
+
+During the development of all the aforementioned CSS styles, Chrome's developer tools, which includes a DOM element inspector \cite{chrome-dev-tools}, was used to modify and apply CSS styles live in order to determine the best values for the elements such as font sizes, paddings and margins.\\
+
+To improve the style and readability of the pages, minor HTML elements were added such as thematic breaks \textit{\textless hr\textgreater}, line breaks \textit{\textless br\textgreater} and links to external websites opening in new tabs by using \textit{target=``\_blank''} in the anchor tags \textit{\textless a\textgreater}. Additionally, the footer was modified to stick at the bottom of the page rather than floating up when there is not enough content to fill the page.
 
 \subsection{Advanced Styling}
 \label{sec:advanced-styling}
 
-Several advanced CSS features, which involved writing some JavaScript to implement more advanced features, were finally added once the basic website was finished.\\
+At this stage, the basic website is done and development could have been halted, but a couple of advanced styles, which involved both CSS and JavaScript, were worth being added on top of the existing features.\\
 
-The first improvement consisted in making efficient and elegant use of the home page to clearly separate the six subtopics. This was achieved through the implementation of a grid of images, which revealed the subtopic's title when hovered and routed the user to the corresponding subtopic upon mouse click. A tutorial from Menucool was used to successfully implement this feature, and external code was used. This allowed me to strengthen my understanding of CSS written by other web developers and ability to understand and modify existing CSS to satisfy the website's needs.\\
+The first improvement consisted in making efficient and elegant use of the home page to clearly separate the six subtopics. This was achieved through the implementation of a grid of images, which revealed the subtopic's title when hovered and routed the user to the corresponding subtopic upon mouse click, as depicted in Figure \ref{fig:grid-images-hover}. 
 
-The second improvement targeted the figures used in the \textit{Contents} page. It was very hard to discern details from the figures, especially on mobile devices, without zooming in manually. Therefore, image modals from the W3School were implemented to allow the user to click on a figure to view it scaled up in a full screen view. Images modals are further discussed in Section \ref{sec:accessibility}.
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.8\textwidth]{report/images/grid-images-hover.png}}
+\caption{\label{fig:grid-images-hover}A screenshot of the grid of images, with the mouse hovering the right image, triggering the title to appear.}
+\end{figure}
+
+A tutorial from Menucool \cite{menucool} was followed to successfully implement this feature, and external code was therefore used. This allowed me to strengthen my understanding of CSS written by other web developers and ability to understand and modify existing CSS to satisfy the website's requirements. The style handling the grid of images can be found at \textit{``css/modal-images.css''}. The six photos used were provided by Pexels\footnote{Pexels: \url{https://www.pexels.com/photo-license/}.} could be re-used for free.\\
+
+The second improvement targeted the figures used in the \textit{Contents} page. Indeed, it was initially very hard to discern details on the images, especially on mobile devices, without zooming in manually. Therefore, image modals from the W3School \cite{w3s-image-modals} were implemented to allow the user to click on one of the three figures from the \textit{Contents} page to view it scaled up in a full screen view with a dark background. Benefits of images modals are further discussed in Section \ref{sec:accessibility}.
 
 \subsection{Responsiveness}
 
-After writing the style for the web pages that suited large screens (desktop and laptop devices), the website had to be made responsive to adapt to any screen size, especially small screens (mobile devices). This was mainly achieved through the use of \textit{media queries}. Media queries act as breakpoints in CSS when applying style. They check the size of the current screen to decide which style to apply to the markup elements.\\
+Most of the style that has been written so far suits large screens (desktop and laptop devices), but it does not suit small screens yet (mobile devices). Therefore, the website had to be made responsive to adapt to any screen size. This was mainly achieved through the use of \textit{media queries}, which act as breakpoints in CSS when applying style by checking the size of the current screen to decide which style to apply to the markup elements \cite{responsive-media-queries}.\\
 
-The first element that needed responsiveness was the navbar. Indeed, on smaller screens, the navbar links on the left and the right did not align properly. The solution was to collapse all the links except the home link and to add an extra link that shows the hidden links.\\
+The first element that needed responsiveness was the navbar. Indeed, on smaller screens, the navbar links on the left and the right did not align properly, which visually appeared very poor. The solution was to collapse all the links except the home link and to add an extra button (link with only an icon) that reveal the hidden links when pressed, as seen in Figure \ref{fig:mobile-navbar}. The W3School tutorial on how to make responsive navbars \cite{responsive-navbar} was followed to implement this feature.
 
-The second element consisted in making the grid of images linking to the different subtopics display 2 images on large screens and 1 image on small screens.\\
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.8\textwidth]{report/images/mobile-navbar.png}}
+\caption{\label{fig:mobile-navbar}A screenshot of the navbar on a small mobile screen. To the left, the links are collapsed and revealed upon a button press, which expands the other links, as seen on the right.}
+\end{figure}
 
-Other small improvements consisted in making text smaller on small screens, and left align rather than right align.
+Finally, multiple elements required a responsive design when switching to small screens. These included:
+\begin{itemize}
+    \item In the grid of images on the \textit{Home} page, display only a single cell on small screens and two on large screens.
+    \item Regarding text, make the size smaller and alignment on the left on mobile devices to improve readability.
+\end{itemize}
 
 \subsection{Optimisation}
 
-Finally, a few improvements were carried out maximise the speed of the website. Large file sizes are a major enemy when it comes to loading page quickly. Therefore, all images were converted from PNG to JPEG files, before being compressed online to reduce their file size. This resulted images originally weighing between 1.5Mb-2Mb to weighing less than 500Kb after the compressions.\\
+Lastly, a few improvements were carried out maximise the loading speed of the website. Logically, large file sizes are a major enemy when it comes to loading a page swiftly. Therefore, all PNG images were converted to a JPEG format, before being compressed online\footnote{CompressJPEG was used to compress the images: \url{https://compressjpeg.com/}.} to reduce their file size. This resulted in images originally weighing between 1.5Mb-2Mb to weighing less than 500Kb after the compressions.\\
 
-Importing stylesheets in the HTML \textit{\textless head\textgreater} can be costly operations in terms of time, especially when there are many stylesheets. As a result, the CSS styles were separated into only four stylesheets, and minified for quicker imports. Additionally, online stylesheets such as the Font Awesome stylesheet, which is used for displaying the icons in the navbar and footer, are not downloaded but imported via CDN\footnote{Content Delivery Networks} for higher performance.
+Furthermore, it important to note that importing stylesheets in the HTML \textit{\textless head\textgreater} can be a costly operation in terms of time, especially when there are many stylesheets. As a result, the CSS styles were separated into only four stylesheets, and minified\footnote{The CSS stylesheets were minified through CSSMinifier: \url{https://cssminifier.com/}.} for quicker imports. Additionally, online stylesheets such as the Font Awesome stylesheet \cite{w3-css-icons} were not downloaded and locally accessed but rather imported via CDN\footnote{Content Delivery Networks} for higher performance \cite{dilley2002globally}.
+
+% ---------------------------------------------------------------------------
 
 \section{Accessibility}
 \label{sec:accessibility}
 
-Multiple features were added to the website to favour accessibility to all. The first one is the Sleek and Futuristic colour scheme from \textit{Visme}, which was favours high-contrast between text and background. The Chrome element inspector developer tool was used to view the contrast between text colour and background colour, which was acceptable across the entire website.\\
+Multiple features were progressively added to the website to favour accessibility to all users. The first one is the colour scheme mentioned in Section \ref{sec:design-content-early-styling}, which favours high-contrast between text and background. The Chrome element inspector developer tool was used to view the contrast between text colour and background colour, which, according to the tool, was acceptable across the entire website. The image modals mentioned in Section \ref{sec:advanced-styling} also help users on small screens and visually impaired users as it allows the figures to be seen in fullscreen with a dark background. Screenshots of the contrast results can be found in Appendix \ref{sec:appendix-accessibility-results-contrast}.\\
 
-Keyboard accessibility was also taken into account for disabled users who cannot use their computer mouse. When tabbing across the website, the current link is highlighted with a thick bright red border. This includes navbar links, the grid images, and any link pointing to other sections, references or external websites. Additionally, the red border also appears when clicking on those links to help visually impaired and colour-blind users know that they hit the link correctly. This was achieved by styling selected anchor tags \textit{\textless a\textgreater} using the CSS \textit{:focus} pseudo-class.\\
+Keyboard accessibility was also taken into account for disabled users who cannot use their computer mouse. When tabbing across the website, the active link is highlighted with a thick bright red border (see Appendix \ref{sec:appendix-accessibility-results-keyboard}). This includes navbar links, the grid images, and any link pointing to other sections, references or external websites. Additionally, the red border also appears when clicking on those links to help visually impaired and colour-blind users know that they clicked the link correctly. This was achieved by styling selected anchor tags \textit{\textless a\textgreater} using the CSS \textit{:focus} pseudo-class \cite{css-focus}.
 
-The image modals mentioned in Section \ref{sec:advanced-styling} also help users on small screens and visually impaired users as it allows the figures to be seen in fullscreen with a dark background.
+% ---------------------------------------------------------------------------
 
 \section{Testing and Evaluation}
 \label{sec:testing-evaluation}
@@ -162,22 +231,152 @@ show website to multiple users, so made colours more bright
 
 Making a simple website with only markup and basic css is easy. The difficulty lies with making it responsive, accessible to everyone, organised, optimised for speed
 
+% ---------------------------------------------------------------------------
 
-% -------------------------------------- APPENDICES ------------------------------------------ 
 \begin{appendices}
+
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
 
 \clearpage
 \section{Evidence of Prior Planning}
-todo
+
+\subsection{Research Essay}
+\label{sec:appendix-prior-planning-research-essay}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=1.1\textwidth]{report/images/prior-planning-research.png}}
+\caption{\label{fig:prior-planning-research}A screenshot of the research carried out in a Word document.}
+\end{figure}
+
+\subsection{Initial Draft}
+\label{sec:appendix-prior-initial-draft}
+
+\includepdf[pages={1},pagecommand={},scale=0.9]{report/images/prior-planning.pdf}
 
 \clearpage
-\section{User evaluation questionnaires}
-todo
+\section{User Evaluation}
+
+\subsection{User Evaluation Form}
+
+The user evaluation is powered by Google Forms, and is available online at: \url{https://forms.gle/FHY6LDmY65GQa33s8}.
+
+\paragraph{Description} This is a user evaluation of the website made for the Assignment 1 of IS5103 Web Technologies module. The website aims to introduce the reader to the role of web standards.\\
+
+Note: The data retrieved from this user evaluation will be anonymously compared to other results. By submitting this form, you give consent for your data to be evaluated and used in the report. You may withdraw from the user evaluation at any time.
+
+\paragraph{Visit the website} \url{https://agj6.host.cs.st-andrews.ac.uk/index.html}
+
+\paragraph{Questions}
+
+\begin{itemize}
+    \item How readable did you find the website?
+    \begin{itemize}
+        \item Answer: 5-point linear scale (as shown in Figure \ref{fig:linear-scale}).
+    \end{itemize}
+\end{itemize}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.75\textwidth]{report/images/linear_scale.png}}
+\caption{\label{fig:linear-scale}Illustration of the 5-point linear scale used to record an answer, ranging from 1 to 5.}
+\end{figure}
+
+\begin{itemize}
+    \item What are the main aspects/elements that make the website readable e.g. colours, spacing, fonts, etc.
+    \begin{itemize}
+        \item Answer: short paragraph.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item Do you think this website would be suitable to visually impaired readers?
+    \begin{itemize}
+        \item Answer: multiple choice question:
+        \begin{itemize}
+            \item Yes
+            \item No
+            \item Maybe
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item What are the main aspects/elements that make the website accessible to everyone?
+    \begin{itemize}
+        \item Answer: short paragraph.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item What would you change about the website to improve it?
+    \begin{itemize}
+        \item Answer: short paragraph.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item Have you tested the website on desktop or mobile?
+    \begin{itemize}
+        \item Answer: multiple choice question:
+        \begin{itemize}
+            \item Yes
+            \item No
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item If you tested the website on mobile, how would you rate the responsiveness of the website (how well did it scale from large screens to small screens)?
+    \begin{itemize}
+        \item Answer: 5-point linear scale (as shown in Figure \ref{fig:linear-scale}).
+    \end{itemize}
+\end{itemize}
+
+\subsection{User Evaluation Results}
+
+The user evaluation was carried out with a total of 10 users. Their answers to each question are listed below.\\
+
+How readable did you find the website?
+todo add results
+
+What are the main aspects/elements that make the website readable e.g. colours, spacing, fonts, etc.\\
+
+\begin{itemize}
+    \item todo
+\end{itemize}
+
+Do you think this website would be suitable to visually impaired readers?
 
 \clearpage
 \section{Accessibility Results}
+\label{sec:appendix-accessibility-results}
 
-show screenshots
+\subsection{Contrast Results}
+\label{sec:appendix-accessibility-results-contrast}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.7\textwidth]{report/images/accessibility-contrast-header.png}}
+\caption{\label{fig:accessibility-contrast-header}Screenshot of the contrast result of the Chrome developer tool element inspector for the header's text.}
+\end{figure}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=0.8\textwidth]{report/images/accessibility-contrast-text.png}}
+\caption{\label{fig:accessibility-contrast-text}Screenshot of the contrast result of the Chrome developer tool element inspector for the main content's text.}
+\end{figure}
+
+\begin{figure}[ht] 
+\centerline{\includegraphics[width=\textwidth]{report/images/accessibility-contrast-modal.png}}
+\caption{\label{fig:accessibility-contrast-modal}Screenshot of the contrast result of the Chrome developer tool element inspector for one of the figure's modal in fullscreen.}
+\end{figure}
+
+\subsection{Keyboard Accessibility Screenshot}
+\label{sec:appendix-accessibility-results-keyboard}
+
+\begin{figure}[h] 
+\centerline{\includegraphics[width=\textwidth]{report/images/border-focus.png}}
+\caption{\label{fig:border-focus}Screenshot of the \textit{Home} page with multiple links set on \textit{:focus} to illustrate the bright red border surrounding each element when navigating through the page using either the \textit{tab} key or when clicking one of the links.}
+\end{figure}
 
 \clearpage
 \section{Validation URL's and Reports}
@@ -186,10 +385,6 @@ todo
 \clearpage
 \section{Browser Functionality and Compability}
 todo
-
-\newpage
-\bibliographystyle{plain}
-\bibliography{bibliography}
 
 \end{appendices}
 \end{document}
