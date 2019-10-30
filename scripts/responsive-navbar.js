@@ -3,7 +3,7 @@
  * Source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
  *
  * Modifications to original code: The variables were renamed to match the website's local variables.
- * Modifications by 150014151
+ * Modifications by Adam Jaamour
  *
  * Toggle between adding and removing the "responsive" class to navbar-content when the user clicks on the icon.
  */

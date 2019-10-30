@@ -1,6 +1,6 @@
 /**
  * Responsive Image Grids with Transitional Effects when Hovered.
  * Original code by: http://www.menucool.com/ui/responsive-image-grid-with-hover-effect
- * Modifications by 150014151
+ * Modifications by Adam Jaamour
  */
 :root{--main-light-blue-colour:#117d7f;--main-dark-colour:#2c3531;--dark-text:#d9b08c;--light-text:#ffcb9a;--normal-text:#d6ede7}#rig{max-width:960px;margin:0 auto 100px;padding:0;font-size:0;list-style:none;background-color:var(--main-light-blue-colour)}#rig li{width:50%;display:inline-block;vertical-align:middle;box-sizing:border-box;margin:0;padding:0}.rig-cell{margin:12px;box-shadow:0 0 6px rgba(0,0,0,.3);display:block;position:relative;overflow:hidden}.rig-img{display:block;width:100%;height:auto;border:none;transform:scale(1);transition:all 1s}#rig li:hover .rig-img{transform:scale(1.05)}.rig-overlay{position:absolute;display:block;top:0;left:0;bottom:0;right:0;margin:auto;background:var(--main-light-blue-colour);background-size:50px 50px;opacity:0;transition:all .6s}#rig li:hover .rig-overlay{opacity:.75}.rig-text{display:block;padding:0 30px;box-sizing:border-box;position:absolute;font-weight:700;left:0;width:100%;text-align:center;text-transform:capitalize;font-size:30px;top:40%;color:var(--light-text);opacity:0;transform:translateY(-20px);transition:all .3s}#rig li:hover .rig-text{transform:translateY(0);opacity:.9}@media (max-width:9000px){#rig li{width:50%}}@media (max-width:700px){#rig li{width:100%}}
