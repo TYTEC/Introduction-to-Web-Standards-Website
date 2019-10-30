@@ -8,7 +8,7 @@ You can visit the website live here: [agj6.host.cs.st-andrews.ac.uk](https://agj
 
 * Clone the repository (or download the zipped project):
 ```
-$ git clone https://github.com/Adamouization/Adamouization.github.io
+$ git clone https://github.com/Adamouization/Introduction-to-Web-Standards-Website
 ```
 
 * Open the `index.html` file in your web browser:
@@ -17,7 +17,7 @@ open index.html
 ```
 
 ## License 
-* see [LICENSE](https://github.com/Adamouization/IS5103-Web-Standards/blob/master/LICENSE) file.
+* see [LICENSE](https://github.com/Adamouization/Introduction-to-Web-Standards-Website/blob/master/LICENSE) file.
 
 ## Contact
 * Email: adam@jaamour.com
